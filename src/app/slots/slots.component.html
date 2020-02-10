@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div style="padding:10px" class="col" *ngFor="let game of slotGames">
+      <div class="box">
+        <img  class="image" src="{{game.image}}">
+        <div class="play"><img style="width:70px; height:70px"src="../../assets/FAVPNG_youtube-play-button-clip-art_1HY0e4Hi.png" /> </div>
+        <div *ngIf="game.new"class="ribbon ribbon-top-right"><span>New</span></div>
+        <div *ngIf="game.top"class="ribbon ribbon-top-right"><span>Top</span></div>
+        <div *ngIf="game.jackpot" class="jackpot">£{{game.jackpot}}</div>
+      </div>
+    </div>
+  </div>
+</div>

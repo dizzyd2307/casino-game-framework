@@ -1,0 +1,88 @@
+
+.box {
+    position: relative;
+    width: 260px;
+    background: #000;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+    border-radius: 10px;
+  }
+
+  .box:hover .play{display:block}
+
+.play{
+  position : absolute;
+    display:none;
+    top:50px;
+    left: 40%;
+    margin:0 auto; 
+    z-index:100;
+    cursor: pointer;
+} 
+  .jackpot{
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.5);
+    height: 20%;
+    width: 260px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+  }
+  .ribbon {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -2;
+    content: '';
+    display: block;
+    border: 5px solid #8DC63F;
+  }
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 5px 0;
+    background-color: #8DC63F;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .image{
+    border-radius: 10px;
+  }
+  .ribbon-top-right {
+    top: -10px;
+    right: -10px;
+    z-index: 2;
+  }
+  .ribbon-top-right::before,
+  .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  .ribbon-top-right::before {
+    top: 0;
+    left: 0;
+  }
+  .ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+  .ribbon-top-right span {
+    left: -50px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  
+  
+  
